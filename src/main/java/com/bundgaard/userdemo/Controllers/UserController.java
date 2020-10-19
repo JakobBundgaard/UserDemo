@@ -16,7 +16,6 @@ public class UserController {
     @PostMapping("api/userservice")
     public ResponseEntity<UserService> getSearchResults(){
         System.out.println("api/userservice kaldt med: ");
-
         return ResponseEntity.ok(users);
     }
 
@@ -26,5 +25,4 @@ public class UserController {
         users.addUser(user.username);
         return ResponseEntity.ok(users);
     }
-
 }

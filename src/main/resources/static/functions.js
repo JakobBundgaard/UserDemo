@@ -25,7 +25,6 @@ function getUsers(){
     });
 }
 
-
 function createUsers(user){
     console.log("createUser er kaldt");
     var createUserObject = {};
@@ -47,7 +46,6 @@ function createUsers(user){
         }
     });
 }
-
 
 function checkQuery(){
     if(typeof jQuery !== undefined){

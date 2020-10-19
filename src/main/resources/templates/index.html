@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Users</title>
-
     <script type="text/javascript" th:src="@{/functions.js}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-<a href="/"><h5>Slet brugere</h5></a>
-<h2>Opret bruger</h2>
-<h7>Indtast et brugernavn</h7>
-<form id="createform">
-    <input type="text" id="username">
-    <input type="submit" value="Opret">
-</form>
+    <a href="/"><h5>Slet brugere</h5></a>
+    <h2>Opret bruger</h2>
+    <h7>Indtast et brugernavn</h7>
 
-<div id="status"></div>
-<div id="users"></div>
+    <form id="createform">
+        <input type="text" id="username">
+        <input type="submit" value="Opret">
+    </form>
+
+    <div id="status"></div>
+    <div id="users"></div>
 
 
 
-<script type="text/javascript">
-    checkQuery();
-    getUsers();
-    preventCreateUserFromSending($("#createform"));
-</script>
+    <script type="text/javascript">
+        checkQuery();
+        getUsers();
+        preventCreateUserFromSending($("#createform"));
+    </script>
 
 </body>
 </html>
