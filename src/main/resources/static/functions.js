@@ -1,10 +1,3 @@
-function preventCreateFormFromSending(form){
-    form.submit(function (event){
-        event.preventDefault(); // forhindrer at formen bliver sendt
-        getUsers();
-    })
-}
-
 function preventCreateUserFromSending(form){
     form.submit(function (event){
         event.preventDefault(); //forhindre at formen bliver sendt
@@ -35,11 +28,9 @@ function getUsers(){
 
 function createUsers(user){
     console.log("createUser er kaldt");
-    //AJAX request
     var createUserObject = {};
     createUserObject["username"] = user;
-    var count = $("#users > div").length
-    createUserObject["count"] = count
+    createUserObject["count"] = $("#users > div").length
     $.ajax({
         url:"api/createuser",
         type:"POST",
@@ -59,7 +50,7 @@ function createUsers(user){
 
 
 function checkQuery(){
-    if(typeof jQuery != undefined){
+    if(typeof jQuery !== undefined){
         console.log("jQuery er loaded")
     } else {
         console.log("jQuery er IKKE loaded")
