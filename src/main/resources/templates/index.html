@@ -2,15 +2,15 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Hello You!</title>
+    <title>Users</title>
 
     <script type="text/javascript" th:src="@{/functions.js}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-<a href="/"><h5>Refresh Page</h5></a>
-<h2>Opret en bruger for pokker!</h2>
-<h7>Indtast et username</h7>
+<a href="/"><h5>Slet brugere</h5></a>
+<h2>Opret bruger</h2>
+<h7>Indtast et brugernavn</h7>
 <form id="createform">
     <input type="text" id="username">
     <input type="submit" value="Opret">
@@ -18,8 +18,6 @@
 
 <div id="status"></div>
 <div id="users"></div>
-
-
 
 
 
